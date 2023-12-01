@@ -1,0 +1,11 @@
+2023-10-17 12:50:43,690 - [Winbot] - INFO - Initialized Database!
+
+2023-10-17 13:02:32,207 - [Winbot] - ERROR - replace() argument 2 must be str, not None
+Traceback (most recent call last):
+  File "C:\Users\soudh\AppData\Local\Programs\Python\Python310\lib\site-packages\pyrogram\dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "C:\Users\soudh\OneDrive\Desktop\my works\programing\APP python project\winbot\events.py", line 23, in onMessage
+    await i['callback'](client,message)
+  File "C:\Users\soudh\OneDrive\Desktop\my works\programing\APP python project\winbot\plugins\welcome.py", line 20, in join
+    text = text.replace("{desc}", groupDescription)
+TypeError: replace() argument 2 must be str, not None

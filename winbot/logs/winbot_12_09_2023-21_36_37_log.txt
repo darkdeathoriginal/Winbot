@@ -1,0 +1,3 @@
+2023-09-12 21:36:40,648 - [Winbot] - INFO - Initialized Database!
+
+2023-09-12 21:36:44,190 - [Winbot] - INFO - Replied with None to hello in -1001768994767

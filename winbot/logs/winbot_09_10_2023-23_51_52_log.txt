@@ -1,0 +1,17 @@
+2023-10-09 23:51:58,758 - [Winbot] - INFO - Initialized Database!
+
+2023-10-09 23:52:43,525 - [Winbot] - ERROR - list index out of range
+Traceback (most recent call last):
+  File "C:\Users\soudh\AppData\Local\Programs\Python\Python310\lib\site-packages\pyrogram\dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "C:\Users\soudh\OneDrive\Desktop\my works\programing\APP python project\winbot\events.py", line 20, in onMessage
+    await command["callback"](client,message,extra)
+  File "C:\Users\soudh\OneDrive\Desktop\my works\programing\APP python project\winbot\plugins\filter.py", line 59, in run
+    lol = eee if m.reply_to_message else extracted[1]
+IndexError: list index out of range
+2023-10-09 23:55:17,228 - [Winbot] - INFO - 783836937 added new filter (hello) in -1001768994767
+2023-10-09 23:55:24,027 - [Winbot] - INFO - Replied with None to hello in -1001768994767
+2023-10-09 23:55:39,506 - [Winbot] - INFO - Replied with None to hello in -1001768994767
+2023-10-09 23:55:39,847 - [Winbot] - INFO - 783836937 added new filter (hi) in -1001768994767
+2023-10-09 23:55:44,307 - [Winbot] - INFO - Replied with None to hi in -1001768994767
+2023-10-09 23:55:46,514 - [Winbot] - INFO - Replied with None to hi in -1001768994767

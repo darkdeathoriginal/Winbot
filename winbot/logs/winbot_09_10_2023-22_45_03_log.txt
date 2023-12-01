@@ -1,0 +1,2 @@
+2023-10-09 22:45:09,838 - [Winbot] - INFO - Initialized Database!
+

@@ -1,0 +1,35 @@
+2023-11-15 08:04:17,771 - [Winbot] - INFO - Initialized Database!
+
+2023-11-15 08:05:16,474 - [Winbot] - ERROR - 'NoneType' object has no attribute 'lower'
+Traceback (most recent call last):
+  File "C:\Users\soudh\AppData\Local\Programs\Python\Python310\lib\site-packages\pyrogram\dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "C:\Users\soudh\OneDrive\Desktop\my works\programing\APP python project\winbot\events.py", line 9, in onMessage
+    await i["callback"](client,message)
+  File "C:\Users\soudh\OneDrive\Desktop\my works\programing\APP python project\winbot\plugins\filter.py", line 92, in sendFilter
+    match = await regex_searcher(pattern, m.text.lower())
+AttributeError: 'NoneType' object has no attribute 'lower'
+2023-11-15 08:07:03,150 - [Winbot] - INFO - Replied with None to hello in -1001768994767
+2023-11-15 08:07:08,875 - [Winbot] - INFO - Replied with None to hi in -1001768994767
+2023-11-15 08:07:14,144 - [Winbot] - INFO - Replied with None to hello in -1001768994767
+2023-11-15 08:07:17,077 - [Winbot] - INFO - Replied with None to hi in -1001768994767
+2023-11-15 08:07:32,238 - [Winbot] - INFO - Replied with None to hello in -1001768994767
+2023-11-15 08:11:28,627 - [Winbot] - ERROR - 'NoneType' object has no attribute 'lower'
+Traceback (most recent call last):
+  File "C:\Users\soudh\AppData\Local\Programs\Python\Python310\lib\site-packages\pyrogram\dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "C:\Users\soudh\OneDrive\Desktop\my works\programing\APP python project\winbot\events.py", line 9, in onMessage
+    await i["callback"](client,message)
+  File "C:\Users\soudh\OneDrive\Desktop\my works\programing\APP python project\winbot\plugins\filter.py", line 92, in sendFilter
+    match = await regex_searcher(pattern, m.text.lower())
+AttributeError: 'NoneType' object has no attribute 'lower'
+2023-11-15 08:11:28,800 - [Winbot] - ERROR - 'NoneType' object has no attribute 'lower'
+Traceback (most recent call last):
+  File "C:\Users\soudh\AppData\Local\Programs\Python\Python310\lib\site-packages\pyrogram\dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "C:\Users\soudh\OneDrive\Desktop\my works\programing\APP python project\winbot\events.py", line 9, in onMessage
+    await i["callback"](client,message)
+  File "C:\Users\soudh\OneDrive\Desktop\my works\programing\APP python project\winbot\plugins\filter.py", line 92, in sendFilter
+    match = await regex_searcher(pattern, m.text.lower())
+AttributeError: 'NoneType' object has no attribute 'lower'
+2023-11-15 08:12:25,744 - [Winbot] - INFO - Replied with None to hi in -1001768994767

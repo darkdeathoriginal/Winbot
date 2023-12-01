@@ -1,0 +1,32 @@
+2023-11-13 22:52:34,956 - [Winbot] - INFO - Initialized Database!
+
+2023-11-13 22:53:25,653 - [Winbot] - ERROR - Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+Traceback (most recent call last):
+  File "C:\Users\soudh\AppData\Local\Programs\Python\Python310\lib\site-packages\pyrogram\dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "C:\Users\soudh\OneDrive\Desktop\my works\programing\APP python project\winbot\plugins\manga.py", line 70, in handle_callback
+    await m.answer()
+  File "C:\Users\soudh\AppData\Local\Programs\Python\Python310\lib\site-packages\pyrogram\types\bots_and_keyboards\callback_query.py", line 159, in answer
+    return await self._client.answer_callback_query(
+  File "C:\Users\soudh\AppData\Local\Programs\Python\Python310\lib\site-packages\pyrogram\methods\bots\answer_callback_query.py", line 73, in answer_callback_query
+    return await self.invoke(
+  File "C:\Users\soudh\AppData\Local\Programs\Python\Python310\lib\site-packages\pyrogram\methods\advanced\invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "C:\Users\soudh\AppData\Local\Programs\Python\Python310\lib\site-packages\pyrogram\session\session.py", line 361, in invoke
+    return await self.send(query, timeout=timeout)
+  File "C:\Users\soudh\AppData\Local\Programs\Python\Python310\lib\site-packages\pyrogram\session\session.py", line 331, in send
+    RPCError.raise_it(result, type(data))
+  File "C:\Users\soudh\AppData\Local\Programs\Python\Python310\lib\site-packages\pyrogram\errors\rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.QueryIdInvalid: Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+2023-11-13 22:53:25,783 - [Winbot] - ERROR - Invalid file. Expected a file path as string or a binary (not text) file pointer
+Traceback (most recent call last):
+  File "C:\Users\soudh\AppData\Local\Programs\Python\Python310\lib\site-packages\pyrogram\dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "C:\Users\soudh\OneDrive\Desktop\my works\programing\APP python project\winbot\plugins\manga.py", line 79, in handle_callback
+    await app.send_document(chat_id, data, caption=title)
+  File "C:\Users\soudh\AppData\Local\Programs\Python\Python310\lib\site-packages\pyrogram\methods\messages\send_document.py", line 181, in send_document
+    file = await self.save_file(document, progress=progress, progress_args=progress_args)
+  File "C:\Users\soudh\AppData\Local\Programs\Python\Python310\lib\site-packages\pyrogram\methods\advanced\save_file.py", line 119, in save_file
+    raise ValueError("Invalid file. Expected a file path as string or a binary (not text) file pointer")
+ValueError: Invalid file. Expected a file path as string or a binary (not text) file pointer

@@ -1,0 +1,11 @@
+2023-09-12 20:58:23,059 - [Winbot] - INFO - Initialized Database!
+
+2023-09-12 20:58:54,084 - [Winbot] - ERROR - list index out of range
+Traceback (most recent call last):
+  File "C:\Users\soudh\AppData\Local\Programs\Python\Python310\lib\site-packages\pyrogram\dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "C:\Users\soudh\OneDrive\Desktop\my works\programing\APP python project\winbot\events.py", line 17, in onMessage
+    await command["callback"](client,message,extra)
+  File "C:\Users\soudh\OneDrive\Desktop\my works\programing\APP python project\winbot\plugins\filter.py", line 45, in run
+    lol = eee if m.reply_to_message else extracted[1]
+IndexError: list index out of range

@@ -1,0 +1,32 @@
+2023-11-15 08:15:31,414 - [Winbot] - WARNING - Unable to connect due to network issues: timed out
+2023-11-15 08:15:40,853 - [Winbot] - INFO - Initialized Database!
+
+2023-11-15 08:16:21,005 - [Winbot] - ERROR - ac-olkxhxu-shard-00-02.upwhsus.mongodb.net:27017: timed out,ac-olkxhxu-shard-00-00.upwhsus.mongodb.net:27017: timed out, Timeout: 30s, Topology Description: <TopologyDescription id: 655430d40acf0e42019a5fa5, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-olkxhxu-shard-00-00.upwhsus.mongodb.net', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('ac-olkxhxu-shard-00-00.upwhsus.mongodb.net:27017: timed out')>, <ServerDescription ('ac-olkxhxu-shard-00-01.upwhsus.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('ac-olkxhxu-shard-00-02.upwhsus.mongodb.net', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('ac-olkxhxu-shard-00-02.upwhsus.mongodb.net:27017: timed out')>]>
+Traceback (most recent call last):
+  File "C:\Users\soudh\AppData\Local\Programs\Python\Python310\lib\site-packages\pyrogram\dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "C:\Users\soudh\OneDrive\Desktop\my works\programing\APP python project\winbot\events.py", line 9, in onMessage
+    await i["callback"](client,message)
+  File "C:\Users\soudh\OneDrive\Desktop\my works\programing\APP python project\winbot\plugins\filter.py", line 89, in sendFilter
+    chat_filters = db.get_all_filters(m.chat.id)
+  File "C:\Users\soudh\OneDrive\Desktop\my works\programing\APP python project\winbot\database\filters.py", line 47, in get_all_filters
+    curr = self.find_all({"chat_id": chat_id})
+  File "C:\Users\soudh\OneDrive\Desktop\my works\programing\APP python project\winbot\database\__init__.py", line 44, in find_all
+    return list(self.collection.find(query))
+  File "C:\Users\soudh\AppData\Local\Programs\Python\Python310\lib\site-packages\pymongo\cursor.py", line 1238, in next
+    if len(self.__data) or self._refresh():
+  File "C:\Users\soudh\AppData\Local\Programs\Python\Python310\lib\site-packages\pymongo\cursor.py", line 1130, in _refresh
+    self.__session = self.__collection.database.client._ensure_session()
+  File "C:\Users\soudh\AppData\Local\Programs\Python\Python310\lib\site-packages\pymongo\mongo_client.py", line 1935, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "C:\Users\soudh\AppData\Local\Programs\Python\Python310\lib\site-packages\pymongo\mongo_client.py", line 1883, in __start_session
+    server_session = self._get_server_session()
+  File "C:\Users\soudh\AppData\Local\Programs\Python\Python310\lib\site-packages\pymongo\mongo_client.py", line 1921, in _get_server_session
+    return self._topology.get_server_session()
+  File "C:\Users\soudh\AppData\Local\Programs\Python\Python310\lib\site-packages\pymongo\topology.py", line 520, in get_server_session
+    session_timeout = self._check_session_support()
+  File "C:\Users\soudh\AppData\Local\Programs\Python\Python310\lib\site-packages\pymongo\topology.py", line 504, in _check_session_support
+    self._select_servers_loop(
+  File "C:\Users\soudh\AppData\Local\Programs\Python\Python310\lib\site-packages\pymongo\topology.py", line 218, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: ac-olkxhxu-shard-00-02.upwhsus.mongodb.net:27017: timed out,ac-olkxhxu-shard-00-00.upwhsus.mongodb.net:27017: timed out, Timeout: 30s, Topology Description: <TopologyDescription id: 655430d40acf0e42019a5fa5, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-olkxhxu-shard-00-00.upwhsus.mongodb.net', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('ac-olkxhxu-shard-00-00.upwhsus.mongodb.net:27017: timed out')>, <ServerDescription ('ac-olkxhxu-shard-00-01.upwhsus.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('ac-olkxhxu-shard-00-02.upwhsus.mongodb.net', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('ac-olkxhxu-shard-00-02.upwhsus.mongodb.net:27017: timed out')>]>

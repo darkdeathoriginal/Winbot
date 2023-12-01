@@ -1,0 +1,3 @@
+2023-09-12 21:35:42,814 - [Winbot] - INFO - Initialized Database!
+
+2023-09-12 21:35:54,274 - [Winbot] - ERROR - name 'c' is not defined

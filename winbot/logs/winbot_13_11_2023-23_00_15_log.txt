@@ -1,0 +1,9 @@
+2023-11-13 23:00:21,960 - [Winbot] - INFO - Initialized Database!
+
+2023-11-13 23:01:34,368 - [Winbot] - ERROR - [WinError 2] The system cannot find the file specified: 'Vol.72 Chapter 696 : Naruto And Sasuke (3).pdf'
+Traceback (most recent call last):
+  File "C:\Users\soudh\AppData\Local\Programs\Python\Python310\lib\site-packages\pyrogram\dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "C:\Users\soudh\OneDrive\Desktop\my works\programing\APP python project\winbot\plugins\manga.py", line 80, in handle_callback
+    os.remove(path)
+FileNotFoundError: [WinError 2] The system cannot find the file specified: 'Vol.72 Chapter 696 : Naruto And Sasuke (3).pdf'

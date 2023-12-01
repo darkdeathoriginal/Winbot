@@ -1,0 +1,11 @@
+2023-11-13 22:58:07,807 - [Winbot] - INFO - Initialized Database!
+
+2023-11-13 22:58:54,139 - [Winbot] - ERROR - '_io.BytesIO' object has no attribute 'name'
+Traceback (most recent call last):
+  File "C:\Users\soudh\AppData\Local\Programs\Python\Python310\lib\site-packages\pyrogram\dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "C:\Users\soudh\OneDrive\Desktop\my works\programing\APP python project\winbot\plugins\manga.py", line 79, in handle_callback
+    await app.send_document(chat_id, BytesIO(data), caption=title)
+  File "C:\Users\soudh\AppData\Local\Programs\Python\Python310\lib\site-packages\pyrogram\methods\messages\send_document.py", line 183, in send_document
+    mime_type=self.guess_mime_type(file_name or document.name) or "application/zip",
+AttributeError: '_io.BytesIO' object has no attribute 'name'

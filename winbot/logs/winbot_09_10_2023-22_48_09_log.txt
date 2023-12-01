@@ -1,0 +1,11 @@
+2023-10-09 22:48:16,562 - [Winbot] - INFO - Initialized Database!
+
+2023-10-09 22:48:22,675 - [Winbot] - ERROR - 'dict' object has no attribute 'description'
+Traceback (most recent call last):
+  File "C:\Users\soudh\AppData\Local\Programs\Python\Python310\lib\site-packages\pyrogram\dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "C:\Users\soudh\OneDrive\Desktop\my works\programing\APP python project\winbot\events.py", line 20, in onMessage
+    await command["callback"](client,message,extra)
+  File "C:\Users\soudh\OneDrive\Desktop\my works\programing\APP python project\winbot\plugins\ping.py", line 21, in start
+    msg += f"/{i} ({commands[i].description}) \n"
+AttributeError: 'dict' object has no attribute 'description'

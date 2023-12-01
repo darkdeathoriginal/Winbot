@@ -1,0 +1,31 @@
+2023-10-09 23:44:29,862 - [Winbot] - INFO - Initialized Database!
+
+2023-10-09 23:45:08,049 - [Winbot] - ERROR - SSL handshake failed: ac-olkxhxu-shard-00-00.upwhsus.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:997),SSL handshake failed: ac-olkxhxu-shard-00-01.upwhsus.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:997),SSL handshake failed: ac-olkxhxu-shard-00-02.upwhsus.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:997), Timeout: 30s, Topology Description: <TopologyDescription id: 652443057332dd065d8aa0d4, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-olkxhxu-shard-00-00.upwhsus.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-olkxhxu-shard-00-00.upwhsus.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:997)')>, <ServerDescription ('ac-olkxhxu-shard-00-01.upwhsus.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-olkxhxu-shard-00-01.upwhsus.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:997)')>, <ServerDescription ('ac-olkxhxu-shard-00-02.upwhsus.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-olkxhxu-shard-00-02.upwhsus.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:997)')>]>
+Traceback (most recent call last):
+  File "C:\Users\soudh\AppData\Local\Programs\Python\Python310\lib\site-packages\pyrogram\dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "C:\Users\soudh\OneDrive\Desktop\my works\programing\APP python project\winbot\events.py", line 9, in onMessage
+    await i["callback"](client,message)
+  File "C:\Users\soudh\OneDrive\Desktop\my works\programing\APP python project\winbot\plugins\filter.py", line 89, in sendFilter
+    chat_filters = db.get_all_filters(m.chat.id)
+  File "C:\Users\soudh\OneDrive\Desktop\my works\programing\APP python project\winbot\database\filters.py", line 47, in get_all_filters
+    curr = self.find_all({"chat_id": chat_id})
+  File "C:\Users\soudh\OneDrive\Desktop\my works\programing\APP python project\winbot\database\__init__.py", line 39, in find_all
+    return list(self.collection.find(query))
+  File "C:\Users\soudh\AppData\Local\Programs\Python\Python310\lib\site-packages\pymongo\cursor.py", line 1238, in next
+    if len(self.__data) or self._refresh():
+  File "C:\Users\soudh\AppData\Local\Programs\Python\Python310\lib\site-packages\pymongo\cursor.py", line 1130, in _refresh
+    self.__session = self.__collection.database.client._ensure_session()
+  File "C:\Users\soudh\AppData\Local\Programs\Python\Python310\lib\site-packages\pymongo\mongo_client.py", line 1935, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "C:\Users\soudh\AppData\Local\Programs\Python\Python310\lib\site-packages\pymongo\mongo_client.py", line 1883, in __start_session
+    server_session = self._get_server_session()
+  File "C:\Users\soudh\AppData\Local\Programs\Python\Python310\lib\site-packages\pymongo\mongo_client.py", line 1921, in _get_server_session
+    return self._topology.get_server_session()
+  File "C:\Users\soudh\AppData\Local\Programs\Python\Python310\lib\site-packages\pymongo\topology.py", line 520, in get_server_session
+    session_timeout = self._check_session_support()
+  File "C:\Users\soudh\AppData\Local\Programs\Python\Python310\lib\site-packages\pymongo\topology.py", line 504, in _check_session_support
+    self._select_servers_loop(
+  File "C:\Users\soudh\AppData\Local\Programs\Python\Python310\lib\site-packages\pymongo\topology.py", line 218, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: SSL handshake failed: ac-olkxhxu-shard-00-00.upwhsus.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:997),SSL handshake failed: ac-olkxhxu-shard-00-01.upwhsus.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:997),SSL handshake failed: ac-olkxhxu-shard-00-02.upwhsus.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:997), Timeout: 30s, Topology Description: <TopologyDescription id: 652443057332dd065d8aa0d4, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-olkxhxu-shard-00-00.upwhsus.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-olkxhxu-shard-00-00.upwhsus.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:997)')>, <ServerDescription ('ac-olkxhxu-shard-00-01.upwhsus.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-olkxhxu-shard-00-01.upwhsus.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:997)')>, <ServerDescription ('ac-olkxhxu-shard-00-02.upwhsus.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-olkxhxu-shard-00-02.upwhsus.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:997)')>]>

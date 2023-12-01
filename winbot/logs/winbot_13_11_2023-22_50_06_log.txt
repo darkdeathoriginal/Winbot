@@ -1,0 +1,13 @@
+2023-11-13 22:50:13,367 - [Winbot] - INFO - Initialized Database!
+
+2023-11-13 22:50:55,440 - [Winbot] - ERROR - Invalid file. Expected a file path as string or a binary (not text) file pointer
+Traceback (most recent call last):
+  File "C:\Users\soudh\AppData\Local\Programs\Python\Python310\lib\site-packages\pyrogram\dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "C:\Users\soudh\OneDrive\Desktop\my works\programing\APP python project\winbot\plugins\manga.py", line 79, in handle_callback
+    await app.send_document(chat_id, data, caption=title)
+  File "C:\Users\soudh\AppData\Local\Programs\Python\Python310\lib\site-packages\pyrogram\methods\messages\send_document.py", line 181, in send_document
+    file = await self.save_file(document, progress=progress, progress_args=progress_args)
+  File "C:\Users\soudh\AppData\Local\Programs\Python\Python310\lib\site-packages\pyrogram\methods\advanced\save_file.py", line 119, in save_file
+    raise ValueError("Invalid file. Expected a file path as string or a binary (not text) file pointer")
+ValueError: Invalid file. Expected a file path as string or a binary (not text) file pointer

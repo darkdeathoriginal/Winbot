@@ -1,0 +1,24 @@
+2023-11-09 12:38:13,857 - [Winbot] - WARNING - Unable to connect due to network issues: [WinError 10065] A socket operation was attempted to an unreachable host
+2023-11-09 12:38:14,868 - [Winbot] - WARNING - Unable to connect due to network issues: [WinError 10065] A socket operation was attempted to an unreachable host
+2023-11-09 12:38:15,898 - [Winbot] - WARNING - Unable to connect due to network issues: [WinError 10065] A socket operation was attempted to an unreachable host
+2023-11-09 12:38:16,918 - [Winbot] - WARNING - Connection failed! Trying again...
+2023-11-09 12:38:18,003 - [Winbot] - WARNING - Unable to connect due to network issues: [WinError 10065] A socket operation was attempted to an unreachable host
+2023-11-09 12:38:19,030 - [Winbot] - WARNING - Unable to connect due to network issues: [WinError 10065] A socket operation was attempted to an unreachable host
+2023-11-09 12:38:20,050 - [Winbot] - WARNING - Unable to connect due to network issues: [WinError 10065] A socket operation was attempted to an unreachable host
+2023-11-09 12:38:21,076 - [Winbot] - WARNING - Connection failed! Trying again...
+2023-11-09 12:38:22,100 - [Winbot] - WARNING - Unable to connect due to network issues: [WinError 10065] A socket operation was attempted to an unreachable host
+2023-11-09 12:38:23,124 - [Winbot] - WARNING - Unable to connect due to network issues: [WinError 10065] A socket operation was attempted to an unreachable host
+2023-11-09 12:38:24,149 - [Winbot] - WARNING - Unable to connect due to network issues: [WinError 10065] A socket operation was attempted to an unreachable host
+2023-11-09 12:38:25,173 - [Winbot] - WARNING - Connection failed! Trying again...
+2023-11-09 12:38:26,215 - [Winbot] - WARNING - Unable to connect due to network issues: [WinError 10065] A socket operation was attempted to an unreachable host
+2023-11-09 12:38:27,243 - [Winbot] - WARNING - Unable to connect due to network issues: [WinError 10065] A socket operation was attempted to an unreachable host
+2023-11-09 12:38:28,266 - [Winbot] - WARNING - Unable to connect due to network issues: [WinError 10065] A socket operation was attempted to an unreachable host
+2023-11-09 12:38:29,288 - [Winbot] - WARNING - Connection failed! Trying again...
+2023-11-09 12:38:30,329 - [Winbot] - WARNING - Unable to connect due to network issues: [WinError 10065] A socket operation was attempted to an unreachable host
+2023-11-09 12:38:31,370 - [Winbot] - WARNING - Unable to connect due to network issues: [WinError 10065] A socket operation was attempted to an unreachable host
+2023-11-09 12:38:32,396 - [Winbot] - WARNING - Unable to connect due to network issues: [WinError 10065] A socket operation was attempted to an unreachable host
+2023-11-09 12:38:33,419 - [Winbot] - WARNING - Connection failed! Trying again...
+2023-11-09 12:38:34,447 - [Winbot] - WARNING - Unable to connect due to network issues: [WinError 10065] A socket operation was attempted to an unreachable host
+2023-11-09 12:38:35,471 - [Winbot] - WARNING - Unable to connect due to network issues: [WinError 10065] A socket operation was attempted to an unreachable host
+2023-11-09 12:38:36,512 - [Winbot] - WARNING - Unable to connect due to network issues: [WinError 10065] A socket operation was attempted to an unreachable host
+2023-11-09 12:38:37,536 - [Winbot] - WARNING - Connection failed! Trying again...

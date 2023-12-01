@@ -1,0 +1,3 @@
+2023-11-21 22:01:09,897 - [Winbot] - INFO - Initialized Database!
+
+2023-11-21 22:01:28,836 - [Winbot] - INFO - 783836937 added new filter (hi) in -491069173
