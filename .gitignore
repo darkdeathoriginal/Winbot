@@ -1,0 +1,5 @@
+.env
+my_bot.session
+__pycache__/
+test.py
+winbot/logs

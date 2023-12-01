@@ -1,1 +1,7 @@
 pyrogram
+python-dotenv
+beautifulsoup4
+requests
+reportlab
+pymongo
+certifi
